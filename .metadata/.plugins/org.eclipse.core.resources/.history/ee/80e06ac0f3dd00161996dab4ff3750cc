@@ -1,0 +1,19 @@
+package interview;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Hashtable;
+import java.util.List;
+
+public class ArrayQuestions {
+
+	public static boolean isUnique(String str) {
+		Hashtable<char,boolean> hash = new Hashtable<Integer>();
+		
+		
+	}
+	
+	public static void main(String[] args){
+		isUnique("abc");
+	}
+}

@@ -1,0 +1,50 @@
+package interview;
+
+import java.util.Hashtable;
+
+public class ArrayQuestions {
+
+	public static Boolean isUnique(String str) {
+		Hashtable<Character, Boolean> hash = new Hashtable<Character, Boolean>();
+		for (int i = 0; i < str.length(); i ++){
+			if (hash.get(str.charAt(i)) != null){
+				return false;
+			}
+			hash.put(str.charAt(i), true);
+		}
+		return true;
+	}
+	
+	public static Boolean isPermutation(String a, String b){
+		Hashtable<Character, Integer> hashForA, hashForB;
+		
+		if (a.length() != b.length()) {
+			return false;
+		}
+		
+		hashForA = new Hashtable<Character, Integer>();
+		hashForB = new Hashtable<Character, Integer>();
+
+		for (int i=0; i< a.length(); i++){
+			helper(a.charAt(i), hashForA);
+			helper(b.charAt(i), hashForB);
+		}
+
+		if (hashForA.equals(hashForB)){
+			return true;
+		}
+		return false;
+	}
+	
+	public static void ifExistsPlus1(char character, Hashtable<Character, Integer> table){
+		if (table.get(character) == null){
+			table.put(character, 1);
+		}
+		else{
+			table.put(character, table.get(character) + 1);
+		}
+	}
+	public static void main(String[] args){
+		System.out.println(isPermutation("abccb", "abbcc"));
+	}
+}

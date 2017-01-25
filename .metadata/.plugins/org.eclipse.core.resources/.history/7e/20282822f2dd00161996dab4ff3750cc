@@ -1,0 +1,24 @@
+package interview;
+
+import java.util.Hashtable;
+import java.util.List;
+
+public class ArrayQuestions {
+
+	public static boolean isUnique(String str) {
+		char[] alphabet = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+		if(str.length() > 26){
+			return false;
+		}
+		else{
+			Integer a = 10;
+		
+			
+		}
+		return true;
+	}
+	
+	public static void main(String[] args){
+		isUnique("abc");
+	}
+}

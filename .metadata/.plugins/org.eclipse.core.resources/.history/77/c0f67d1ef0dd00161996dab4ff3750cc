@@ -1,0 +1,35 @@
+package interview;
+
+import java.util.Hashtable;
+
+public class ArrayQuestions {
+	private Integer a;
+	
+	public void setA(Integer param){
+		this.a = param;
+	}
+	
+	public Integer getA(){
+		return this.a;
+	}
+	
+	public static Integer whatsthename(String name){
+		return 
+	}
+	
+	/*
+	
+	public boolean isUnique(String str) {
+		
+		
+		char[] alphabet = {'a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'};
+		if(str.length() > 26){
+			return false;
+		}
+		return true;
+	}*/
+	/*
+	public static void main(String[] args){
+		isUnique("abc");
+	}*/
+}

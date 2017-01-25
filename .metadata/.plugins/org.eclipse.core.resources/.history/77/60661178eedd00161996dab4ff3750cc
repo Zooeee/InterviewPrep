@@ -1,0 +1,11 @@
+package interview;
+
+public class test {
+	public static void main(String[] arg){
+		
+	}
+	
+	public static void main(String[] arg, int b){
+		
+	}
+}

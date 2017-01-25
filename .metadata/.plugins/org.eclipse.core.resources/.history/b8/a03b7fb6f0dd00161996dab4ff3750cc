@@ -1,0 +1,14 @@
+package interview;
+
+public class test {
+	public static void main(String[] arg){
+		//ArrayQuestions.isUnique();
+		ArrayQuestions ins1 = new ArrayQuestions();
+		ArrayQuestions ins2 = new ArrayQuestions();
+		//a.isUnique();
+		ins1.setA(10);
+		ins2.setA(5);
+		System.out.println(ins1.giveMe5());
+	}
+	
+}
